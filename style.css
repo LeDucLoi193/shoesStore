@@ -84,7 +84,7 @@ body::after {
   position: relative;
 }
 #navbar li#loaiGiay > ul {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 40px;
   left: 0;
@@ -103,17 +103,18 @@ body::after {
 #navbar ul li:hover > a {
   color: black;
 }
-#navbar ul li#loaiGiay:hover > ul {
+/* #navbar ul li#loaiGiay:hover > ul {
   display: block;
-}
+}*/
 #navbar ul li#loaiGiay > ul > li {
-  padding: 10px 50px;
+  padding: 10px 60px;
+  width: 100%;
 }
 #navbar ul li#loaiGiay > ul > li > a {
   margin-left: 10px;
   font-size: 17px;
 }
-#navbar ul li#loaiGiay:hover > ul > li {
+/* #navbar ul li#loaiGiay:hover > ul > li {
   display: block;
 }
-/* use jquery to create dropdown menu */
+use jquery to create dropdown menu */

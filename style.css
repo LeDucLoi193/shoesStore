@@ -109,6 +109,7 @@ body::after {
 #navbar ul li#loaiGiay > ul > li {
   padding: 10px 60px;
   width: 100%;
+  border-top: none;
 }
 #navbar ul li#loaiGiay > ul > li > a {
   margin-left: 10px;

@@ -37,39 +37,36 @@ body::after {
 
 #header {
   width: 100%;
-  height: 100px;
+  height: 135px;
   border-bottom: 2px solid #ffc900;
+  display: flex;
 }
 #header img {
   max-width: 100%;
   max-height: 100%;
-  float: left;
 }
 #header h1 {
-  float: left;
   color: #ffc900;
-  margin-left: calc(50vw - 275px);
-  line-height: 100px;
+  line-height: 92px;
   font-family: 'Myriadpro-Bold', sans-serif;
+  margin-left: calc(50vw - 275px);
 }
 
 #navbar {
-  width: 100%;
-  height: 150px;
-  padding: 0px 200px;
   display: inline-block;
 }
 #navbar ul {
   border: 2px solid #ebebeb;
-  width: 1172px;
   display: inline-block;
+  border-bottom: none;
+  border-left: none;
 }
 #navbar ul li {
   display: inline-block;
   list-style: none;
   text-transform: uppercase;
   /* margin: 0px 65px; */
-  padding: 10px 90px;
+  padding: 10px 110px;
   /* border-right: 1px solid #ebebeb; */
   font-weight: bold;
 }
@@ -86,16 +83,18 @@ body::after {
 #navbar li#loaiGiay > ul {
   /* display: none; */
   position: absolute;
-  top: 40px;
+  top: 38px;
   left: 0;
-  width: 259px;
+  width: 300px;
+  border: 2px solid #ebebeb;
+  /* border-top: none; */
 }
 #navbar input {
   margin-left: 50px;
   padding-left: 10px;
   font-size: 15px;
   border: none;
-  line-height: 38px; 
+  line-height: 41px; 
 }
 #navbar ul li:hover {
   background-color: #ebebeb;
@@ -107,7 +106,7 @@ body::after {
   display: block;
 }*/
 #navbar ul li#loaiGiay > ul > li {
-  padding: 10px 60px;
+  padding: 10px 75px;
   width: 100%;
   border-top: none;
 }
@@ -115,7 +114,25 @@ body::after {
   margin-left: 10px;
   font-size: 17px;
 }
-/* #navbar ul li#loaiGiay:hover > ul > li {
-  display: block;
+#navbar #search {
+  position: relative;
+  display: inline-block;
 }
-use jquery to create dropdown menu */
+#navbar #search i {
+  position: absolute;
+  left: calc(100% - 30px);
+  top: calc(50% - 8px);
+}
+#header #navbar .icon {
+  position: relative;
+}
+#header #navbar .icon .fa-shopping-cart {
+  position: absolute;
+  left: 12px;
+  top: -7px;
+}
+#header #navbar .icon .fa-user {
+  position: absolute;
+  left: 70px;
+  top: -7px;
+}

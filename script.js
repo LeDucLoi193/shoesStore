@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // The Loai - dropdownMenu
   var inLoaiGiayUl = false;
   var inLoaiGiay = false;
   var appearUl = false;
@@ -14,11 +15,11 @@ $(document).ready(function(){
     inLoaiGiayUl = true;
     inLoaiGiay = false;
     appearUl = true;
-    console.log(inLoaiGiayUl, inLoaiGiay);
+    // console.log(inLoaiGiayUl, inLoaiGiay);
   });
   $('#loaiGiay > ul').mouseleave(function(event){
     // event.stopPropagation();
-    console.log(inLoaiGiayUl, inLoaiGiay);
+    // console.log(inLoaiGiayUl, inLoaiGiay);
     inLoaiGiayUl = false;
     if (inLoaiGiay == false && inLoaiGiayUl == false){
       $(this).slideUp();
@@ -27,6 +28,21 @@ $(document).ready(function(){
   });
   $('#loaiGiay').mouseleave(function(){
     $(this).find('ul').slideUp();
+  });
+
+  // fix position navbar menu khi cuon chuot xuong
+  $(document).scroll(function(){
+    var bodyScroll = $("html, body").scrollTop();
+    // console.log(bodyScroll);
+    if (bodyScroll > 140){
+      $("#navbar").css( "width", ( $(window).width() * 1 | 0 ) + "px" );
+      $("#navbar").css("position", "fixed");
+      $("#navbar").css("backgroundColor","white");
+    } else {
+      $("#navbar").css( "width", "null" );
+      $("#navbar").css("position", "null");
+      $("#navbar").css("backgroundColor","null");
+    }
   });
 
 });

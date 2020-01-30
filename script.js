@@ -45,4 +45,20 @@ $(document).ready(function(){
   //   }
   // });
 
+  // messenger box
+  $('#messenger > a').click(function(event){
+    var clicks = $(this).data('clicks');
+    if (clicks) {
+      event.preventDefault();
+      $('#messenger > div').fadeOut();
+    } else {
+      event.preventDefault();
+      $('#messenger > div').fadeIn();
+    }
+    $(this).data("clicks", !clicks);   
+  });
+  $('#messenger  div .exit').click(function(event){
+    event.preventDefault();
+    $('#messenger > div').fadeOut();
+  });
 });

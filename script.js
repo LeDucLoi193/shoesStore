@@ -31,18 +31,18 @@ $(document).ready(function(){
   });
 
   // fix position navbar menu khi cuon chuot xuong
-  $(document).scroll(function(){
-    var bodyScroll = $("html, body").scrollTop();
-    // console.log(bodyScroll);
-    if (bodyScroll > 140){
-      $("#navbar").css( "width", ( $(window).width() * 1 | 0 ) + "px" );
-      $("#navbar").css("position", "fixed");
-      $("#navbar").css("backgroundColor","white");
-    } else {
-      $("#navbar").css( "width", "null" );
-      $("#navbar").css("position", "null");
-      $("#navbar").css("backgroundColor","null");
-    }
-  });
+  // $(document).scroll(function(){
+  //   var bodyScroll = $("html, body").scrollTop();
+  //   // console.log(bodyScroll);
+  //   if (bodyScroll > 140){
+  //     $("#navbar").css( "width", ( $(window).width() * 1 | 0 ) + "px" );
+  //     $("#navbar").css("position", "fixed");
+  //     $("#navbar").css("backgroundColor","white");
+  //   } else {
+  //     $("#navbar").css( "width", "null" );
+  //     $("#navbar").css("position", "null");
+  //     $("#navbar").css("backgroundColor","null");
+  //   }
+  // });
 
 });

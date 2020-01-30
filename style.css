@@ -192,3 +192,69 @@ body {
 #content #newShoes #mauGiay .giay:hover {
   padding: 0px;
 }
+
+/* content > news */
+#content #news {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* border-bottom: 1px solid #a0a0a0; */
+}
+#content #news #thongTin {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 1000px;
+}
+#content #news #thongTin div {
+  margin: 20px;
+}
+#content #news #thongTin a {
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #f7a2a2;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: red;
+}
+
+/* contact */
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #c3c3c3;
+}
+#contact #info {
+  width: 1055px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#contact #info > div:first-child {
+  padding-top: 140px;
+}
+#contact #info > div:first-child p {
+  font-family: "Myriadpro-Regular", sans-serif;
+  font-size: 21px;
+  line-height: 36px;
+}
+#contact #info > div:first-child p a {
+  font-family: "Myriadpro-Regular", sans-serif;
+  font-size: 21px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #ff5400;
+}
+
+/* footer */
+#footer div {
+  width: 1000px;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

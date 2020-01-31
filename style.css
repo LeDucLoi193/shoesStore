@@ -55,19 +55,19 @@ body {
 
 #navbar {
   display: inline-block;
+  margin-left: calc(50vw - 577px);
 }
 #navbar ul {
   border: 2px solid #ebebeb;
   display: inline-block;
   border-bottom: none;
-  border-left: none;
 }
 #navbar ul li {
   display: inline-block;
   list-style: none;
   text-transform: uppercase;
   /* margin: 0px 65px; */
-  padding: 10px 110px;
+  padding: 10px 32px;
   /* border-right: 1px solid #ebebeb; */
   font-weight: bold;
 }
@@ -86,14 +86,14 @@ body {
 #navbar li#loaiGiay > ul {
   /* display: none; */
   position: absolute;
-  top: 38px;
+  top: 40px;
   left: 0;
-  width: 285px;
+  width: 129px;
   border: 2px solid #ebebeb;
   /* border-top: none; */
 }
 #navbar input {
-  margin-left: 50px;
+  margin-left: 28px;
   padding-left: 10px;
   font-size: 15px;
   border: none;
@@ -111,13 +111,13 @@ body {
   display: block;
 }*/
 #navbar ul li#loaiGiay > ul > li {
-  padding: 10px 75px;
+  padding: 10px 10px;
   width: 100%;
   border-top: none;
 }
 #navbar ul li#loaiGiay > ul > li > a {
-  margin-left: 10px;
-  font-size: 17px;
+  margin-left: 8px;
+  font-size: 15px;
 }
 #navbar #search {
   position: relative;
@@ -149,7 +149,7 @@ body {
   background-color: #13bfbf;
 }
 .title {
-  margin-left: 430px;
+  margin-left: calc(50vw - 550px);
   margin-bottom: 10px;
 }
 .title h2 {
@@ -320,4 +320,62 @@ body {
 }
 #messenger > a {
   color: #329AF0;
+}
+
+/* responsive */
+/* 960 -> 1200 */
+@media screen and (max-width: 1200px){
+  /* header */
+  #header img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  #navbar ul li {
+    padding: 10px 25px;
+  }
+  #navbar a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  #navbar li#loaiGiay > ul {
+    width: 117px;
+  }
+  #navbar ul li#loaiGiay > ul > li > a {
+    margin-left: 4px;
+    font-size: 14px;
+  }
+
+  /* content */
+  .title {
+    margin-left: 35px;
+  }
+  #content #newShoes #mauGiay {
+    width: 950px;
+  }
+  #content #newShoes #mauGiay .giay {
+    width: 250px;
+  }
+  #content #news #thongTin {
+    width: 868px;
+  }
+
+  /* contact */
+  #contact #info {
+    width: 855px;
+  }
+  #contact #maqp iframe {
+    width: 450px;
+    height: 338px;
+  }
+
+  /* messenger */
+  #messenger {
+    top: 85%;
+    left: 87%;
+  }
+}
+
+/* 768 -> 960 */
+@media screen and (max-width: 960px) {
+  
 }

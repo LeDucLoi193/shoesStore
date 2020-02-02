@@ -377,5 +377,20 @@ body {
 
 /* 768 -> 960 */
 @media screen and (max-width: 960px) {
-  
+  /* header */
+  #navbar {
+    position: absolute;
+    left: 285px;
+    top: 108px;
+    display: none;
+  }
+  #navbar ul {
+    display: block;
+  }
+  #navbar ul li {
+    display: block;
+  }
+  #navbar #search {
+    display: block;
+  }
 }

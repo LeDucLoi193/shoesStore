@@ -61,4 +61,20 @@ $(document).ready(function(){
     event.preventDefault();
     $('#messenger > div').fadeOut();
   });
+
+  // responsive
+  $('.fa-bars').click(function(){
+    var clicks = $(this).data('clicks');
+    if (clicks) {
+      $('#navbar').fadeOut();
+    } else {
+      $('#navbar').fadeIn();
+    }
+    $(this).data("clicks", !clicks);
+  });
+  $(document).on('click', function(event){
+    if (!$(event.target).hasClass("fa-bars")) {
+      $('#navbar').fadeOut();
+    }
+  });
 });

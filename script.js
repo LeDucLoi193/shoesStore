@@ -73,7 +73,8 @@ $(document).ready(function(){
     $(this).data("clicks", !clicks);
   });
   $(document).on('click', function(event){
-    if (!$(event.target).hasClass("fa-bars")) {
+    event.stopPropagation();
+    if (!$(event.target).hasClass("fa-bars") && !$(event.target).hasClass("theLoai")){
       $('#navbar').fadeOut();
     }
   });

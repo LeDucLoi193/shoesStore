@@ -63,7 +63,7 @@ $(document).ready(function(){
   });
 
   // responsive
-  if (window.matchMedia("(max-width: 960px)").matches || window.matchMedia("(max-width: 768px)").matches){
+  if (window.matchMedia("(max-width: 960px)").matches || window.matchMedia("(max-width: 768px)").matches || window.matchMedia("(max-width: 500px)").matches){
     $('.fa-bars').click(function(){
       var clicks = $(this).data('clicks');
       if (clicks) {

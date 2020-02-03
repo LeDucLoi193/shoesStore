@@ -63,19 +63,21 @@ $(document).ready(function(){
   });
 
   // responsive
-  $('.fa-bars').click(function(){
-    var clicks = $(this).data('clicks');
-    if (clicks) {
-      $('#navbar').fadeOut();
-    } else {
-      $('#navbar').fadeIn();
-    }
-    $(this).data("clicks", !clicks);
-  });
-  $(document).on('click', function(event){
-    event.stopPropagation();
-    if (!$(event.target).hasClass("fa-bars") && !$(event.target).hasClass("theLoai")){
-      $('#navbar').fadeOut();
-    }
-  });
+  if (window.matchMedia("(max-width: 960px)").matches || window.matchMedia("(max-width: 768px)").matches){
+    $('.fa-bars').click(function(){
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+        $('#navbar').fadeOut();
+      } else {
+        $('#navbar').fadeIn();
+      }
+      $(this).data("clicks", !clicks);
+    });
+    $(document).on('click', function(event){
+      event.stopPropagation();
+      if (!$(event.target).hasClass("fa-bars") && !$(event.target).hasClass("theLoai")){
+        $('#navbar').fadeOut();
+      }
+    });
+  }
 });

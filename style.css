@@ -468,5 +468,67 @@ body {
 
 /* 500 -> 768px */
 @media screen and (max-width: 768px){
-  
+  /* header */
+  #header {
+    display: block;
+  }
+  #header img {
+    float: right;
+  }
+  #header h1 {
+    line-height: 69px;
+    font-size: 24px;
+    margin-left: calc(50vw - 210px);
+  }
+  #navbar {
+    left: 325px;
+  }
+
+  /* content */
+  #content #newShoes #mauGiay {
+    width: 500px;
+  }
+  #content #newShoes #mauGiay .giay {
+    width: 200px;
+  }
+  #content #newShoes #mauGiay .giay h3 a {
+    font-size: 15px;
+  }
+  #content #news #thongTin {
+    width: 380px;
+    flex-wrap: wrap;
+  }
+  #content #news #thongTin div:last-child {
+    margin-left: 100px;
+  }
+  #content #news #thongTin div:last-child a {
+    margin-left: 25px;
+  }
+  #contact #info {
+    display: block;
+    width: 500px;
+  }
+  #contact #info > div:first-child {
+    padding-top: 25px;
+    text-align: center;
+  }
+  #map {
+    padding-top: 60px;
+    padding-left: 50px;
+  }
+  #map iframe {
+    width: 400px;
+    height: 300px;
+  }
+
+  /* footer */
+  #footer div {
+    max-width: 100%;
+  }
+
+  /* messenger */
+  #messenger {
+    top: 85%;
+    left: 83%;
+  }
 }
